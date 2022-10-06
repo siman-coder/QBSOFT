@@ -1,0 +1,100 @@
+@media (max-width: 1024px) {
+    .container {
+        width: 728px;
+    }
+    .header {
+        &__form {
+            max-width: 344px;
+            &-input {
+                width: 305px;
+            }
+        }
+    }
+    .catalog {
+        &__title {
+            font-size: 28px;
+        }
+        &__wrap {
+            &_box {
+                width: 229px;
+                margin-right: 13px;
+                &:nth-child(2) {
+                    img {
+                        width: 183px;
+                    }
+                }
+                &:nth-child(5) {
+                    img {
+                        width: 187px;
+                    }
+                }
+                &:nth-child(7) {
+                    img {
+                        width: 196px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (width: 375px) {
+    .container-header {
+        flex-wrap: wrap;
+    }
+    .container {
+        width: 335px;
+    }
+    .header {
+        height: 100%;
+        padding-top: 17px;
+        &__account {
+            display: none;
+        }
+        &__375 {
+            display: block;
+        }
+        &__form {
+            margin-top: 16px;
+            &-horizontal {
+                display: block;
+            }
+            width: 100%;
+            border: none;
+            &-input {
+                width: 100%;
+            }
+            &-btn {
+                padding-left: 0;
+            }
+        }
+    }
+    .catalog {
+        padding-bottom: 73px;
+        &__wrap {
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items:center;
+            &_box {
+                width: 335px;
+                margin-right: 0;
+                &:nth-child(2) {
+                    img {
+                        width: 234px;
+                    }
+                }
+                &:nth-child(5) {
+                    img {
+                        width: 232px;
+                    }
+                }
+                &:nth-child(7) {
+                    img {
+                        width: 247px;
+                    }
+                }
+            }
+        }
+    }
+}

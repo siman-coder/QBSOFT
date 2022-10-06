@@ -1,0 +1,47 @@
+.catalog {
+    padding-top: 70px;
+    &__title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 160%;
+        /* identical to box height, or 58px */
+        text-transform: uppercase;
+        /* Основные / Черно-синий */
+        color: #121920;
+        text-align: left;
+        margin-bottom: 30px;
+    }
+    &__wrap {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: stretch;
+        
+        &_box {
+            display: block;
+            width: 287.5px;
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #FFFFFF;
+            border: 1px solid #EBEBF1;
+            border-radius: 5px;
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+            margin-right: 22px;
+            margin-bottom: 22px;
+            transition: all 0.5s;
+            &:hover {
+                background: #FFFFFF;
+                /* Основные / Серый светлый */
+                border: 1px solid #EBEBF1;
+                /* Основные / Большая тень */
+                box-shadow: -3px 0px 40px rgba(0, 0, 0, 0.1), 0px 0px 10px rgba(164, 164, 164, 0.03);
+                border-radius: 5px;
+            }
+        }
+    }
+}

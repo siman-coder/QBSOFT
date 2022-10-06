@@ -1,0 +1,91 @@
+.header {
+    height: 80px;
+    /* Основные / Белый */
+    background: #FFFFFF;
+    /* Доп. / Хедер и футер */
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
+    .container-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+    &__logo {
+        width: 135.04px;
+        height: 30.32px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__form {
+        position: relative;
+        max-width: 835px;
+        height: 40px;
+        background: #FFFFFF;
+/* Основные / Серый светлый */
+        border: 1px solid #EBEBF1;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &-input {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.01em;
+            /* Основные / Серый средний */
+            color: #BBC4D6;
+            width: 796px;
+            height: 100%;
+            border: none;
+            outline:none;
+        }
+        &-btn {
+            height: 100%;
+            padding: 0 9px 0 14px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        &-horizontal {
+            position: absolute;
+            display: none;
+            width: 375px;
+            height: 1px;
+            left: calc(50% - 375px/2);
+            top: 0;
+            /* Основные / Серый средний */
+            background: #BBC4D6;
+            opacity: 0.5;
+        }
+    }
+    &__account {
+        height: 100%;
+        border-left: 1px solid #EBEBF1;
+        padding-left: 19px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &-name {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            color: #768298;
+            margin-right: 10px;
+        }
+        &-photo {
+            width: 40px;
+            height: 40px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    &__375 {
+        display: none;
+    }
+}
